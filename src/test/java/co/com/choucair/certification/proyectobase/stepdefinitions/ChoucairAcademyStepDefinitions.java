@@ -29,21 +29,17 @@ public class ChoucairAcademyStepDefinitions {
         OnStage.theActorCalled("Brandon").wasAbleTo(Login.
                 onThePage(academyChoucairData.get(0).getStrUser(),academyChoucairData.get(0).getStrPassword()));
 
-
     }
 
+    @Then("^he finds the course called$")
+    public void heFindsTheCourseCalled(List<AcademyChoucairData>academyChoucairData)throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(academyChoucairData.get(0).getStrCourse())));
+    }
 
-    @When("^he search for the course (.*) on the choucair academy platform$")
-    public void heSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(List<AcademyChoucairData>academyChoucairData)throws Exception {
+    @When("^he search for the course on the choucair academy platform$")
+    public void heSearchForTheCourseOnTheChoucairAcademyPlatform(List<AcademyChoucairData>academyChoucairData) throws   Exception {
         OnStage.theActorInTheSpotlight().attemptsTo(Search.the(academyChoucairData.get(0).getStrCourse()));
     }
 
-    @Then("^he finds the course called resources (.*)$")
-    public void heFindsTheCourseCalledResourcesRecursosAutomatizacionBancolombia(List<AcademyChoucairData>academyChoucairData) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(academyChoucairData.get(0).getStrCourse())));
 
-
-
-
-    }
 }

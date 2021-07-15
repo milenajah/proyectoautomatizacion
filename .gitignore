@@ -81,11 +81,4 @@ gradle-app.setting
 # Cache of project
 
 .gradletasknamecache
-.gradle/5.2.1/vcsMetadata-1/
-build/generated/
-build/tmp/
-history/
-src/main/java/co/com/choucair/certification/proyectobase/exceptions/
-src/main/java/co/com/choucair/certification/proyectobase/interactions/
-src/main/java/co/com/choucair/certification/proyectobase/util/
-src/main/resources/
+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AcademyChoucair" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-07-14T15:42:37" hostname="usuario-PC" time="0.086">
+<testsuite name="AcademyChoucair" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-07-15T18:54:39" hostname="usuario-PC" time="0.064">
   <properties/>
-  <testcase name="Search for a automation course" classname="AcademyChoucair" time="0.086">
+  <testcase name="Search for a automation course" classname="AcademyChoucair" time="0.064">
     <skipped/>
   </testcase>
   <system-out><![CDATA[]]></system-out>
@@ -11,23 +11,23 @@
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2417ef09
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Search for a automation course:Example: {strUser=1094266807, strPassword=Choucair2021*, strCourse=Recursos Automatizacion Bancolombia} [Given than brandon wants to learn automation at the academy Choucair
 | strUser | strPassword |
-| 1094266807 | Choucair2021* |, When he search for the course on the choucair academy platform
+| 1094266807 | Choucair2021* |, When he search for the course on the Choucair academy platform
 | strCourse |
-| Recursos Automatizacion Bancolombia |, Then he finds the course called
+| Recursos Automatizacion Bancolombia |, Then he finds the course called resources
 | strCourse |
 | Recursos Automatizacion Bancolombia |]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Search for a automation course:Example: {strUser=1094266807, strPassword=Choucair2021*, strCourse=Recursos Automatizacion Bancolombia} [Given than brandon wants to learn automation at the academy Choucair
 | strUser | strPassword |
-| 1094266807 | Choucair2021* |, When he search for the course on the choucair academy platform
+| 1094266807 | Choucair2021* |, When he search for the course on the Choucair academy platform
 | strCourse |
-| Recursos Automatizacion Bancolombia |, Then he finds the course called
+| Recursos Automatizacion Bancolombia |, Then he finds the course called resources
 | strCourse |
 | Recursos Automatizacion Bancolombia |]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Search for a automation course:Example: {strUser=1094266807, strPassword=Choucair2021*, strCourse=Recursos Automatizacion Bancolombia} [Given than brandon wants to learn automation at the academy Choucair
 | strUser | strPassword |
-| 1094266807 | Choucair2021* |, When he search for the course on the choucair academy platform
+| 1094266807 | Choucair2021* |, When he search for the course on the Choucair academy platform
 | strCourse |
-| Recursos Automatizacion Bancolombia |, Then he finds the course called
+| Recursos Automatizacion Bancolombia |, Then he finds the course called resources
 | strCourse |
 | Recursos Automatizacion Bancolombia |]]
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 

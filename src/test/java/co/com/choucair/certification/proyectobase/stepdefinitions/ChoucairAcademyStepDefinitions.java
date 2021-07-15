@@ -3,6 +3,7 @@ package co.com.choucair.certification.proyectobase.stepdefinitions;
 import co.com.choucair.certification.proyectobase.model.AcademyChoucairData;
 import co.com.choucair.certification.proyectobase.questions.Answer;
 import co.com.choucair.certification.proyectobase.tasks.Login;
+import co.com.choucair.certification.proyectobase.tasks.OpenUp;
 import co.com.choucair.certification.proyectobase.tasks.Search;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -26,19 +27,18 @@ public class ChoucairAcademyStepDefinitions {
 
     @Given("^than brandon wants to learn automation at the academy Choucair$")
     public void thanBrandonWantsToLearnAutomationAtTheAcademyChoucair(List<AcademyChoucairData>academyChoucairData)throws Exception {
-        OnStage.theActorCalled("Brandon").wasAbleTo(Login.
-                onThePage(academyChoucairData.get(0).getStrUser(),academyChoucairData.get(0).getStrPassword()));
+        OnStage.theActorCalled("Brandon").wasAbleTo(OpenUp.thePage(),(Login.onThePage(academyChoucairData.get(0).getStrUser(),academyChoucairData.get(0).getStrPassword())));
 
     }
-
-    @Then("^he finds the course called$")
-    public void heFindsTheCourseCalled(List<AcademyChoucairData>academyChoucairData)throws Exception {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(academyChoucairData.get(0).getStrCourse())));
-    }
-
-    @When("^he search for the course on the choucair academy platform$")
+    @When("^he search for the course on the Choucair academy platform$")
     public void heSearchForTheCourseOnTheChoucairAcademyPlatform(List<AcademyChoucairData>academyChoucairData) throws   Exception {
         OnStage.theActorInTheSpotlight().attemptsTo(Search.the(academyChoucairData.get(0).getStrCourse()));
+
+    }
+    @Then("^he finds the course called resources$")
+    public void heFindsTheCourseCalledResources(List<AcademyChoucairData>academyChoucairData)throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(academyChoucairData.get(0).getStrCourse())));
+
     }
 
 
